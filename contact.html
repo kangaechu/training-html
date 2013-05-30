@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Cafe Green.</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cafe Green.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contents">
+        <div class="main">
+            <h1>お問い合わせ</h1>
+            <img src="http://farm8.staticflickr.com/7091/6988157282_e62624f274.jpg" width="500" height="375" alt="Form 1040">
+            <p>お気軽にお問い合わせください。</p>
+            <form action="contact_submit" method="get" accept-charset="utf-8">
+                <table>
+                    <tr><th>お名前</th><td><input type="text" name="name"></td></tr>
+                    <tr><th>郵便番号</th><td><input type="text" name="zip01" maxlength="8" pattern="[0-9]*"></td></tr>
+                    <tr><th>住所（都道府県）</th><td><input type="text" name="pref01"></td></tr>
+                    <tr><th>住所（市区町村）</th><td><input type="text" name="addr01"></td></tr>
+                    <tr><th>住所（それ以降）</th><td><input type="text" name="addr02"></td></tr>
+                    <tr><th>お問い合わせ内容</th><td><textarea name="content" rows="10" wrap="soft">（商品名・お問い合わせ内容をご記入ください）</textarea></td></tr>
+                </table>
+                <button class="css_btn_class">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <h1>Cafe Green.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
