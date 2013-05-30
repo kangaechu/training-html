@@ -27,7 +27,7 @@
             <form action="contact_submit" method="get" accept-charset="utf-8">
                 <table>
                     <tr><th>お名前</th><td><input type="text" name="name"></td></tr>
-                    <tr><th>郵便番号</th><td><input type="text" name="zip01" maxlength="8" pattern="[0-9]*"></td></tr>
+                    <tr><th>郵便番号</th><td><input type="text" name="zip01" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01');" pattern="[0-9\-]*"></td></tr>
                     <tr><th>住所（都道府県）</th><td><input type="text" name="pref01"></td></tr>
                     <tr><th>住所（市区町村）</th><td><input type="text" name="addr01"></td></tr>
                     <tr><th>住所（それ以降）</th><td><input type="text" name="addr02"></td></tr>
@@ -47,5 +47,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="http://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3.js" charset="UTF-8"></script>
 </body>
 </html>
