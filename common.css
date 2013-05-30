@@ -139,3 +139,42 @@ iframe {
     left: 0;
     top: 0;
 }
+
+/* スマホのスタイル */
+header nav {
+    display: none;
+}
+
+/* タブレットのスタイル */
+
+@media all and (min-width: 481px) {
+    footer nav {
+        display: none;
+    }
+    header nav {
+        display: block;
+    }
+}
+
+/* PCのスタイル */
+
+@media all and (min-width: 769px) {
+/*
+all: 980px;
+sub: 200px;
+margin: 15px;
+main: 768px;
+*/
+    div.contents {
+        overflow: hidden;
+    }
+    div.main {
+        float: left;
+        width: 78.0612245%;
+    }
+    div.sub {
+        margin-top: 40px;
+        float: right;
+        width: 20.4081633%;
+    }
+}
