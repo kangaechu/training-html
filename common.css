@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* 基本的なタグの設定 */
+body {
+    font-family: Arial, Verdana, sans-serif;
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #527557;
+    color: #eeeeee;
+}
+
+.contents {
+    background-color: #cccccc;
+    color: #222222;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #527557;
+    color: #eeeeee;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.contents h1 {
+    font-size: 24px;
+}
+
+.info {
+    font-size: small;
+}
