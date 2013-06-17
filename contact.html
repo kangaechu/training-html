@@ -24,7 +24,7 @@
             <h1>お問い合わせ</h1>
             <img src="http://farm8.staticflickr.com/7091/6988157282_e62624f274.jpg" width="500" height="375" alt="Form 1040">
             <p>お気軽にお問い合わせください。</p>
-            <form action="contact_submit" method="get" accept-charset="utf-8">
+            <form>
                 <table>
                     <tr><th>お名前</th><td><input type="text" name="name"></td></tr>
                     <tr><th>郵便番号</th><td><input type="text" name="zip01" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','pref01','addr01');" pattern="[0-9\-]*"></td></tr>
@@ -33,7 +33,7 @@
                     <tr><th>住所（それ以降）</th><td><input type="text" name="addr02"></td></tr>
                     <tr><th>お問い合わせ内容</th><td><textarea name="content" rows="10" wrap="soft">（商品名・お問い合わせ内容をご記入ください）</textarea></td></tr>
                 </table>
-                <button class="css_btn_class">Submit</button>
+                <button class="css_btn_class" id="submit_form">Submit</button>
             </form>
         </div>
     </div>
@@ -48,5 +48,7 @@
         </nav>
     </footer>
     <script src="http://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3.js" charset="UTF-8"></script>
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="verify.js"></script>
 </body>
 </html>
