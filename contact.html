@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.10.1/build/cssreset/cssreset-min.css">
-    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css">
+    <link rel="stylesheet" type="text/css" href="cafe-green.min.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
     <title>Contact - Cafe Green.</title>
 </head>
 
 <body>
-    <header>
+    <div data-role="page" id="contact">
+    <header data-role="header">
         <h1>Cafe Green.</h1>
-        <nav>
+        <nav data-role="navbar">
             <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="menu.html">menu</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li class="ui-btn-active"><a href="contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="contents">
+    <div class="contents" data-role="content">
         <div class="main">
             <h1>お問い合わせ</h1>
             <img src="http://farm8.staticflickr.com/7091/6988157282_e62624f274.jpg" width="500" height="375" alt="Form 1040">
@@ -37,18 +39,20 @@
             </form>
         </div>
     </div>
-    <footer>
+    <footer data-role="footer">
         <h1>Cafe Green.</h1>
-        <nav>
+        <nav data-role="navbar">
             <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="menu.html">menu</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li class="ui-btn-active"><a href="contact.html">contact</a></li>
             </ul>
         </nav>
     </footer>
-    <script src="http://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3.js" charset="UTF-8"></script>
+    </div>
     <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script src="http://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3.js" charset="UTF-8"></script>
     <script src="verify.js"></script>
 </body>
 </html>
