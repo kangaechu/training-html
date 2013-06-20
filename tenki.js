@@ -1,4 +1,4 @@
-(function(){
+$(document).on('pageshow', '#main', function(){
 	$.ajax({
 		url: 'http://localhost/test/tenki.php'
 	}).then(
@@ -8,4 +8,4 @@
 	function(xhr, status, error) {
 		console.log(error);
 	});
-})();
+});
